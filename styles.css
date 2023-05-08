@@ -1,54 +1,33 @@
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.5s ease;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
-button#toggleButton {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    color: #444;
+.header,
+.main,
+.footer {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .dark-mode {
-    background-color: #333;
-    color: #f5f5f5;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
 }
 
-.dark-mode header {
-    background-color: #222;
-    color: #f5f5f5;
+.dark-mode p {
+  color: #f0f0f0;
 }
 
-.dark-mode button#toggleButton {
-    color: #f5f5f5;
-}
-
-.main {
-    padding: 1rem;
-}
-
-.footer {
-    padding: 1rem;
-    background-color: #f5f5f5;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.dark-mode .footer {
-    background-color: #222;
-    color: #f5f5f5;
+.dark-mode button {
+  color: #f0f0f0;
 }
 
